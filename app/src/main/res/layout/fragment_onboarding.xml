@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/most_popular_domains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/email_edit_text_view"
+        app:layout_constraintEnd_toEndOf="@id/email_edit_text_view"
+        app:layout_constraintStart_toStartOf="@id/email_edit_text_view" />
+
+    <EditText
+        android:id="@+id/email_edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:digits="@string/digits"
+        android:hint="@string/email_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm_label"
+        app:layout_constraintEnd_toEndOf="@id/email_edit_text_view"
+        app:layout_constraintStart_toStartOf="@id/email_edit_text_view"
+        app:layout_constraintTop_toBottomOf="@id/error_text_view" />
+
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/email_edit_text_view"
+        app:layout_constraintTop_toBottomOf="@id/email_edit_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

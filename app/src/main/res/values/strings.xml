@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EmailChecker</string>
+    <string name="digits" translatable="false">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-.@</string>
+
+    <string name="email_hint">Enter your E-mail</string>
+    <string name="confirm_label">Confirm</string>
+
+    <string name="error_empty">E-mail can`t be empty</string>
+    <string name="error_pattern_not_match">Invalid email format</string>
+    <string name="error_rejected_email">Rejected e-mail</string>
+    <string name="error_invalid_domain">Invalid domain</string>
+    <string name="error_invalid_smtp">Invalid smtp</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="success_email">Successful</string>
+    <string name="warning_risky">Risky e-mail</string>
+</resources>
